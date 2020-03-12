@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	/*background-color: crimson;*/
+	-webkit-transition: .6s;
+	-o-transition: .6s;
+	transition: .6s;
+	font-family: 'Poppins', sans-serif;
+}
+
+.pill-nav ul{
+	display: flex;
+}
+
+.pill-nav ul li:not(:last-child){
+	margin-right: 10px;
+}
+
+.pill-nav ul li a{
+	display: block;
+	padding: 10px 20px;
+	background: linear-gradient(#555,#999,#f5f5f5,#eded37);
+	text-decoration: none;
+	border-radius: 10px;
+	color:#333;
+	animation:background .3s linear infinite;
+}
+
+@keyframes background{
+	0%{
+		background-position: -200px 0;
+	}
+
+	50%{
+		background-position: -300px 0;
+	}
+
+	100%{
+		background-position: -400px 0;
+	}
+}
+
+
+.pill-nav ul li a.active,
+.pill-nav ul li a:hover{
+	background-color: #ed3237;
+	color:#fff;
+}
